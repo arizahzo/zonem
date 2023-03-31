@@ -43,12 +43,26 @@ proxies:
       headers:
         Host: sg-2.test3.net
     udp: true
+  - name: cdn.onlymega.com2
+    server: cdn.onlymega.com
+    port: 443
+    type: trojan
+    password: dfba30a0-cf7b-11ed-9d1d-1239d0255272
+    skip-cert-verify: true
+    sni: sg-2.test3.net
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg-2.test3.net
+    udp: true
 proxy-groups:
   - name: FASTSSH-SSHKIT-HOWDY
     type: select
     proxies:
       - cdn.onlymega.com
       - cdn.onlymega.com1
+      - cdn.onlymega.com2
       - DIRECT
 rule-providers:
   clash:
