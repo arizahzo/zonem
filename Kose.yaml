@@ -30,7 +30,7 @@ proxies:
       headers:
         Host: sg-2.test3.net
     udp: true
-  - name: cdn.onlymega.com
+  - name: cdn.onlymega.com1
     server: cdn.onlymega.com
     port: 443
     type: trojan
@@ -48,6 +48,7 @@ proxy-groups:
     type: select
     proxies:
       - cdn.onlymega.com
+      - cdn.onlymega.com1
       - DIRECT
 rule-providers:
   clash:
