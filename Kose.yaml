@@ -126,20 +126,19 @@ dns:
     - "*.finalfantasyxiv.com"
     - "*.ffxiv.com"
     - "*.mcdn.bilivideo.cn"
-    - +.media.dssott.com
 proxies:
   - name: 104.16.66.85
     server: 104.16.66.85
     port: 443
     type: trojan
-    password: 4d523620-d2e0-11ed-9190-1239d0255272
+    password: fa77cb30-de5c-11ed-a916-1239d0255272
     skip-cert-verify: true
-    sni: sg3-trojan.bonds.id
+    sni: sg1-trojan.bonds.id
     network: ws
     ws-opts:
       path: /howdy
       headers:
-        Host: sg3-trojan.bonds.id
+        Host: sg1-trojan.bonds.id
     udp: true
   - name: 104.16.66.85 2
     server: 104.16.66.85
