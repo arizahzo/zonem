@@ -126,77 +126,13 @@ dns:
     - "*.finalfantasyxiv.com"
     - "*.ffxiv.com"
     - "*.mcdn.bilivideo.cn"
+    - +.media.dssott.com
 proxies:
-  - name: 🇸🇬🇸🇬🇸🇬🇸🇬🇸🇬🇸🇬🇸🇬❌❌❌
-    server: 104.16.66.85
+  - name: udemy.com
+    server: udemy.com
     port: 443
     type: trojan
-    password: fa77cb30-de5c-11ed-a916-1239d0255272
-    skip-cert-verify: true
-    sni: sg1-trojan.bonds.id
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: sg1-trojan.bonds.id
-    udp: true
-  - name: 104.16.66.85 2
-    server: 104.16.66.85
-    port: 443
-    type: trojan
-    password: e19920a0-d2e0-11ed-a7da-1239d0255272
-    skip-cert-verify: true
-    sni: sg3-trojan.bonds.id
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: sg3-trojan.bonds.id
-    udp: true
-  - name: 104.16.66.85 3
-    server: 104.16.66.85
-    port: 443
-    type: trojan
-    password: 22689310-d2e1-11ed-a821-1239d0255272
-    skip-cert-verify: true
-    sni: sg-3.test3.net
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: sg-3.test3.net
-    udp: true
-  - name: 104.16.66.85 4
-    server: 104.16.66.85
-    port: 443
-    type: trojan
-    password: 3d7ce5c0-d2e1-11ed-b203-1239d0255272
-    skip-cert-verify: true
-    sni: sg3-trojan.bonds.id
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: sg3-trojan.bonds.id
-    udp: true
-  - name: 104.16.66.85 5
-    server: 104.16.66.85
-    port: 443
-    type: trojan
-    password: 3d7ce5c0-d2e1-11ed-b203-1239d0255272
-    skip-cert-verify: true
-    sni: sg3-trojan.bonds.id
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: sg3-trojan.bonds.id
-    udp: true
-  - name: 104.16.66.85 6
-    server: 104.16.66.85
-    port: 443
-    type: trojan
-    password: 27cae0b0-d2e2-11ed-9169-1239d0255272
+    password: 93efb150-e0e2-11ed-b324-1239d0255272
     skip-cert-verify: true
     sni: sg-2.test3.net
     network: ws
@@ -205,11 +141,37 @@ proxies:
       headers:
         Host: sg-2.test3.net
     udp: true
-  - name: 104.16.66.85 7
-    server: 104.16.66.85
+  - name: udemy.com 2
+    server: udemy.com
     port: 443
     type: trojan
-    password: 4b3c85b0-d2e2-11ed-b362-1239d0255272
+    password: ec720b80-e0e2-11ed-91c1-1239d0255272
+    skip-cert-verify: true
+    sni: id-1.test3.net
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: id-1.test3.net
+    udp: true
+  - name: udemy.com 3
+    server: udemy.com
+    port: 443
+    type: trojan
+    password: c679c560-e0e2-11ed-82df-1239d0255272
+    skip-cert-verify: true
+    sni: sg-3.test3.net
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg-3.test3.net
+    udp: true
+  - name: udemy.com 4
+    server: udemy.com
+    port: 443
+    type: trojan
+    password: 0facba90-e0e3-11ed-b2cf-1239d0255272
     skip-cert-verify: true
     sni: sg1-trojan.bonds.id
     network: ws
@@ -222,13 +184,10 @@ proxy-groups:
   - name: FASTSSH-SSHKIT-HOWDY
     type: select
     proxies:
-      - 🇸🇬🇸🇬🇸🇬🇸🇬🇸🇬🇸🇬🇸🇬❌❌❌
-      - 104.16.66.85 2
-      - 104.16.66.85 3
-      - 104.16.66.85 4
-      - 104.16.66.85 5
-      - 104.16.66.85 6
-      - 104.16.66.85 7
+      - udemy.com
+      - udemy.com 2
+      - udemy.com 3
+      - udemy.com 4
       - BEST-PING
       - DIRECT
   - name: BEST-PING
@@ -237,12 +196,9 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬🇸🇬🇸🇬🇸🇬🇸🇬🇸🇬🇸🇬❌❌❌
-      - 104.16.66.85 2
-      - 104.16.66.85 3
-      - 104.16.66.85 4
-      - 104.16.66.85 5
-      - 104.16.66.85 6
-      - 104.16.66.85 7
+      - udemy.com
+      - udemy.com 2
+      - udemy.com 3
+      - udemy.com 4
 rules:
   - MATCH,FASTSSH-SSHKIT-HOWDY
